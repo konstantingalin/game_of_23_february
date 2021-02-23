@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.3/tingle.min.css"
+    integrity="sha512-j1u8eUJ4f23xPPxwOrLUPQaCD2dwzNqqmDDcWS4deWsMv2ohLqmXXuP3hU7g8TyzbMSakP/mMqoNBYWj8AEIFg=="
+    crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+  <title>Akrihin</title>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga',
+    );
+
+    ga('create', 'UA-151038539-3', 'auto', { name: 'oselt' });
+
+    ga('oselt.set', 'page', 'home');
+    ga('oselt.send', 'pageview');
+
+    window.addEventListener('message', function (e) {
+      if (e.data && e.data.docData && e.data.url) {
+        console.dir(e.data.url);
+        console.dir(e.data.docData.Id);
+
+        ga('oselt.set', 'location', e.data.url);
+        ga('oselt.set', 'dimension1', e.data.docData.Id);
+
+      }
+    });
+  </script>
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+    <section class="section _02" id="final">
+      <div class="section__content">
+        <div class="content_box">
+          <div class="box_result">
+            <p class="box_result__score">
+              очки
+            </p>
+            <div id="result">
+              <p class="box_result__main">
+                000
+              </p>
+            </div>
+            <div id="record">
+              <p class="box_result__text">
+                Ваш результат
+              </p>
+            </div>
+          </div>
+          <div class="button_box">
+            <a href="game.html" class="button">начать заново</a>
+          </div>
+          <div class="box_feb">
+            <p>С Днем защитника Отечества! <br>
+              Желаем больших достижений, побед на всех фронтах и&nbsp;получать всегда только желанные подарки!</p>
+            <p class="last">Мы дарим вам скидку 23% на размещение рекламы в формате in-read и banner на платформе “Доктор&nbsp;на&nbsp;работе”. Предложение действительно до 28 февраля 2021г и может быть использовано 1 раз. Чтобы получить свою скидку обратитесь к персональному менеджеру или на почту <a href='mailto:sales@doktornarabote.ru'>sales@doktornarabote.ru</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <!-- <div class="wrapper" id="page_final">
+    <section class="section _3" id="final">
+      <div class="grid">
+        <div class="section__content">
+          <div class="grid__row _lg_items_stretch">
+            <div class="grid__col _lg_4 _sm_12">
+              <div class="hh">
+                <div class="item-title _white text-margin" data-item='1'>
+                  <div class="item-green">
+                    <p class="title _sm text-white text-transform text-bold">
+                      очки
+                    </p>
+                  </div>
+                  <div class="item-light-green" id="record">
+                    <p class="title _sm text-white text-transform text-bold">
+                      новый рекорд!
+                    </p>
+                  </div>
+                  <p id="result" class="text-green text-transform text-bold text-blue text-shadow"></p>
+                </div>
+                <a href="game.html" onclick="ga('oselt.send', 'event', 'buttons', 'restart')"
+                  class="button text-transform text-bold title _sm text-margin" id="restart">
+                  начать заново
+                </a>
+                <img src="../public/drug_1.png" alt="" class="items-center text-margin">
+              </div>
+            </div>
+            <div class="grid__col _lg_8 _sm_12">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-slider='1'>
+                    <div class="item">
+                      <p class="title _lg text-center text-bold text-transform">
+                        ОРВИ – САМАЯ ЧАСТАЯ <br>ИНФЕКЦИЯ ЧЕЛОВЕКА<sup>1</sup>
+                      </p>
+                      <div class="item-title _green">
+                        <p class="text-center text-white">
+                          Ежегодно в РФ гриппом<sup>*</sup> и ОРВИ <br><span class="text-transform text-bold rg"
+                            style="font-size: 24px; ">болеют более 37 млн</span>
+                          человек<sup>2</sup>
+                        </p>
+                      </div>
+                      <p class="text-center text-grey title">
+                        СРЕДНЯЯ ЧАСТОТА ПРОСТУД В ГОД<sup>2</sup>:
+                      </p>
+                      <div class="section__content">
+                        <div class="grid__row _sm_content_center">
+                          <div class="grid__col _lg_1 _sm_0"></div>
+                          <div class="grid__col _lg_3 _sm_6">
+                            <img src="../public/slider_icon_1.png" alt="" class="items-center text-margin">
+                            <p class="text-center text-grey text">
+                              <span class="text-green text-bold" style="color: #2FA2AB;"> 2 случая</span> <br>у взрослых
+                            </p>
+                          </div>
+                          <div class="grid__col _lg_3 _sm_6">
+                            <img src="../public/slider_icon_2.png" alt="" class="items-center text-margin">
+                            <p class="text-center text-grey text">
+                              <span class="text-green text-bold" style="color: #2FA2AB;"> 3 случая</span> <br>у
+                              школьников
+                            </p>
+                          </div>
+                          <div class="grid__col _lg_5 _sm_6">
+                            <img src="../public/slider_icon_3.png" alt="" class="items-center text-margin">
+                            <p class="text-center text-grey text">
+                              <span class="text-green text-bold" style="color: #2FA2AB;"> 6 случаев</span> <br>у детей
+                              дошкольного возраста
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="section__content" style="margin-top: 1em;">
+                        <div class="grid__row _lg_content_center">
+                          <div class="grid__col _lg_10 _sm_12">
+                            <div class="item-title _pink">
+                              <div class="grid__row _lg_content_center _lg_items_center" style="width: 100%;">
+                                <div class="grid__col _lg_4 _sm_12">
+                                  <p class="text-white text-center text-bold number">
+                                    <span>90–96</span>%
+                                  </p>
+                                </div>
+                                <div class="grid__col _lg_8 _sm_12">
+                                  <p class="text-white">
+                                    доля ОРВИ среди всех <br>инфекционных заболеваний<sup>2</sup>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-slider='2'>
+                    <div class="item">
+                      <div class="grid__row _lg_content_center">
+                        <div class="grid__col _lg_1 _sm_0"></div>
+                        <div class="grid__col _lg_11 _sm_12">
+                          <p class="title _lg text-bold text-margin text-transform">
+                            ГРИПП ОБУСЛОВЛИВАЕТ СНИЖЕНИЕ ИММУНОЛОГИЧЕСКОЙ РЕАКТИВНОСТИ<sup>4</sup>
+                          </p>
+                          <p class="text-margin text-grey title">
+                            ОСЛАБЛЕНИЕ ИММУНИТЕТА ПРИВОДИТ:
+                          </p>
+                          <ul class="text-margin">
+                            <li>
+                              <p class="text-grey">к возникновению вторичных бактериальных осложнений</p>
+                            </li>
+                            <li>
+                              <p class="text-grey">к обострению хронических соматических заболеваний</p>
+                            </li>
+                            <li>
+                              <p class="text-grey">к реактивации инфекционных процессов<sup>4</sup></p>
+                            </li>
+                          </ul>
+                          <p class="text-margin text-grey title">
+                            ПРИ ГРИППЕ ПРЕИМУЩЕСТВЕННО РАЗВИВАЮТСЯ<sup>5</sup>:
+                          </p>
+                          <div class="grid__row">
+                            <div class="grid__col _lg_4 _sm_6">
+                              <p class="text-content" data-content='1'>ринит</p>
+                            </div>
+                            <div class="grid__col _lg_4 _sm_6">
+                              <p class="text-content" data-content='2'>фарингит</p>
+
+                            </div>
+                            <div class="grid__col _lg_4 _sm_6">
+                              <p class="text-content" data-content='3'>трахеит</p>
+
+                            </div>
+                            <div class="grid__col _lg_4 _sm_6">
+                              <p class="text-content" data-content='4'>ларингит</p>
+
+                            </div>
+                            <div class="grid__col _lg_4 _sm_6">
+                              <p class="text-content" data-content='5'>бронхит</p>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-slider='3'>
+                    <div class="item">
+                      <div class="grid__row _lg_items_end">
+                        <div class="grid__col _lg_1 _sm_0"></div>
+                        <div class="grid__col _lg_2 _sm_12">
+                          <img src="../public/legth.png" alt="" class="items-center">
+                        </div>
+                        <div class="grid__col _lg_9 _sm_12">
+                          <p class="title _lg text-bold text-margin text-transform">
+                            Грозное осложнение гриппа – специфический вирусный гриппозный пневмонит<sup>4</sup>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="grid__row _lg_content_center">
+                        <div class="grid__col _lg_11 _sm_12">
+                          <div class="item-title _pink">
+                            <p class="text-white text-bold">
+                              Болезнь может протекать как в легкой, так и в тяжелой форме и даже заканчиваться
+                              смертельным
+                              исходом<sup>4</sup>:
+                            </p>
+                            <div class="section__content" style="margin-top: 1em;">
+                              <div class="grid__row _lg_items_stretch">
+                                <div class="grid__col _lg_4 _sm_12">
+                                  <p class="text-bold text-white number ">
+                                    <span>3-5</span>млн
+                                  </p>
+                                  <p class="text-white">
+                                    случаев тяжелых форм<sup>**</sup>
+                                  </p>
+                                </div>
+                                <div class="grid__col _lg_5 _sm_12">
+                                  <p class="text-bold text-white number ">
+                                    <span>~650</span> тыс.
+                                  </p>
+                                  <p class="text-white">
+                                    случаев смерти<sup>***</sup>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-slider='4'>
+                    <div class="item">
+                      <div class="grid__row _lg_items_center">
+                        <div class="grid__col _lg_1 _sm_0"></div>
+                        <div class="grid__col _lg_7 _sm_12">
+                          <p class="title _lg text-bold text-margin text-transform">
+                            ОСЕЛЬТАМИВИР
+                          </p>
+                          <p class="text-margin title text-transform text-grey">
+                            наиболее распространенный <br>препарат первой линии для <br>профилактики и лечения
+                            гриппа<sup>6</sup>
+                          </p>
+                        </div>
+                        <div class="grid__col _lg_3 _sm_12">
+                          <img src="../public/man.png" alt="" class="items-center">
+                        </div>
+                      </div>
+                      <div class="grid__row _lg_content_end">
+                        <div class="grid__col _lg_11 _sm_12">
+                          <p class="text-margin text-content text-grey" data-content='1'>
+                            <span>Включен в российские и международные клинические рекомендации<sup>4,6,7</sup></span>
+                          </p>
+                          <p class="text-margin text-content text-grey" data-content='2'>
+                            <span>Один из наиболее безопасных противовирусных препаратов<sup>6</sup></span>
+                          </p>
+                          <p class="text-margin text-content text-grey" data-content='3'>
+                            <span>Характеризуется хорошей переносимостью<sup>8</sup></span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-slider='5'>
+                    <div class="item">
+                      <div class="grid__row _lg_content_end">
+                        <div class="grid__col _lg_11">
+
+                          <p class="title _lg text-bold text-margin text-transform">
+                            Осельтамивир-Акрихин способствует:
+                          </p>
+                          <p class="text-margin text-content text-grey" data-content='1'>
+                            <span>
+                              снижению заболеваемости на <span class="text-green"
+                                style="color: #2A9FAD">76–92%<sup>9</sup></span>
+                            </span>
+                          </p>
+                          <p class="text-margin text-content text-grey" data-content='2'>
+                            <span>
+                              сокращению длительности <br>заболевания на <span class="text-green"
+                                style="color: #2A9FAD">2 суток<sup>9</sup></span>
+                            </span>
+                          </p>
+                          <p class="text-margin text-content text-grey" data-content='3'>
+                            <span>
+                              уменьшению тяжести <span class="text-green" style="color: #2A9FAD">клинических
+                                <br>проявлений</span> гриппа<sup>8</sup>
+                            </span>
+                          </p>
+                          <p class="text-margin text-content text-grey" data-content='4'>
+                            <span>
+                              снижению риска возникновения <br>осложнений на <span class="text-green"
+                                style="color: #2A9FAD">86%</span> и частоты <br>их развития<sup>9</sup>
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-slider='6'>
+                    <div class="item">
+                      <div class="grid__row _lg_content_center">
+                        <div class="grid__col _lg_10 _sm_12">
+                          <div class="item-title _green">
+                            <p class="title _lg text-bold text-margin text-transform text-white">
+                              ОСЕЛЬТАМИВИР-АКРИХИН
+                            </p>
+                            <p class="text-margin title text-transform text-grey text-white">
+                              разумная альтернатива <br>известным западным брендам<sup>10</sup>
+                            </p>
+                          </div>
+                          <p class="text-margin title text-transform text-grey">
+                            ПОКАЗАНИЯ К ПРИМЕНЕНИЮ<sup>9</sup>
+                          </p>
+                          <div class="section__content" style="margin-top: 1em;">
+                            <div class="grid__row _lg_items_center">
+                              <div class="grid__col _lg_6 _sm_12">
+                                <p class="text-margin text-content text-grey text" data-content='1'>
+                                  <span>
+                                    Лечение гриппа у взрослых и детей в возрасте старше 1 года
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="grid__col _lg_6 _sm_12">
+                                <p class="text-margin text-content text-grey text" data-content='2'>
+                                  <span>
+                                    Профилактика гриппа <br>у детей старше 1 года
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="grid__col _lg_12">
+                                <p class="text-margin text-content text-grey text" data-content='3'
+                                  style="margin-top: 1em;">
+                                  <span>
+                                    Профилактика гриппа у взрослых и подростков в возрасте старше 12 лет, находящихся в
+                                    группах повышенного риска инфицирования вирусом
+                                  </span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-slider='7'>
+                    <div class="item">
+                      <div class="grid__row _lg_content_end">
+                        <div class="grid__col _lg_11 _sm_12">
+                          <p class="title _lg text-bold text-margin text-transform">
+                            ОСЕЛЬТАМИВИР-АКРИХИН
+                          </p>
+                          <div class="item-title _pink">
+                            <p class="text-center title text-grey text-white text-transform">
+                              на <span class="text-bold">36</span>% доступнее оригинального препарата<sup>10</sup>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid__row _lg_items_center">
+                        <div class="grid__col _lg_1 _sm_0"></div>
+                        <div class="grid__col _lg_6 _sm_12">
+                          <p class="title _lg text-bold text-margin text-transform qqh" style="font-size: 30px;">
+                            РЕЖИМ ПРИМЕНЕНИЯ<sup>9</sup>
+                          </p>
+                          <p class="text-margin text-content text-grey" data-content='1'>
+                            1–2 капсулы в день
+                          </p>
+                          <p class="text-margin text-content text-grey" data-content='2'>
+                            1 упаковка на курс
+                          </p>
+                        </div>
+                        <div class="grid__col _lg_5 _sm_12">
+                          <img src="../public/man.png" alt="" class="items-center">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-slider='8'>
+                    <div class="item">
+                      <div class="section__content" style="margin-top: 1em;">
+                        <div class="grid__row _lg_content_center">
+                          <div class="grid__col _lg_10 _sm_12">
+                            <div class="item-title _green">
+                              <p class="title _lg text-bold text-margin text-transform text-white">
+                                АКРИХИН ЛИДИРУЮЩИЙ РОССИЙСКИЙ ПРОИЗВОДИТЕЛЬ<sup>11</sup>
+                              </p>
+                              <p class="title text-grey text-white text-transform"
+                                style="line-height: 30px;">
+                                 препаратов по доступной
+                                цене<sup>12</sup>
+                              </p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid__row _lg_items_center _lg_content_center _sm_items_start">
+                        <div class="grid__col _lg_1 _sm_0"></div>
+                          <div class="grid__col _lg_3 _sm_6">
+                          <img src="../public/slider_icon_21.png" alt="" class="items-center text-margin">
+                          <p class="text-center text-grey" style="font-size: 16px; line-height: 20px;">
+                            доля рынка<sup>16</sup>
+                          </p>
+                        </div>
+                        <div class="grid__col _lg_3 _sm_6">
+                          <img src="../public/slider_icon_22.png" alt="" class="items-center text-margin">
+                          <p class="text-center text-grey" style="font-size: 16px; line-height: 20px;">
+                            доступная цена<sup>12</sup>
+                          </p>
+                        </div>
+                        <div class="grid__col _lg_3 _sm_6">
+                          <img src="../public/slider_icon_23.png" alt="" class="items-center text-margin">
+                          <p class="text-center text-grey" style="font-size: 16px; line-height: 20px;">
+                            известная марка<sup>13,15</sup>
+                          </p>
+                        </div>
+                        <div class="grid__col _lg_1 _sm_0"></div>
+                        <div class="grid__col _lg_3 _sm_6">
+                          <img src="../public/slider_icon_24.png" alt="" class="items-center text-margin">
+                          <p class="text-center text-grey" style="font-size: 16px; line-height: 20px;">
+                            GMP <br>производство<sup>14</sup>
+                          </p>
+                        </div>
+                        <div class="grid__col _lg_3 _sm_6">
+                          <img src="../public/slider_icon_25.png" alt="" class="items-center text-margin">
+                          <p class="text-center text-grey" style="font-size: 16px; line-height: 20px;">
+                            более <span class="text-bold">80 лет</span> <br>на рынке<sup>13</sup>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__content uu">
+          <div class="grid__row">
+            <div class="grid__col _lg_12">
+              <p class="text-center text-white text-bold literature ">ЛИТЕРАТУРА</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="grid">
+        <div class="section__content">
+          <div class="grid__row _lg_items_center _lg_content_center _sm_reverse_col">
+            <div class="grid__col _lg_1 _sm_0"></div>
+            <div class="grid__col _lg_10 _sm_12">
+              <div id="footer_container">
+                <div class="grid__row _lg_items_stretch _lg_content_center">
+                  <div class="grid__col _lg_2 _sm_3">
+                    <img src="../public/akrihin.png" alt="" class="items-center">
+                  </div>
+                  <div class="grid__col _lg_4 _sm_9">
+                    <p class="small text-bold text-margin text-grey">
+                      За&nbsp;обратной связью о&nbsp;препарате обращаться по&nbsp;адресу:
+                    </p>
+                    <p class="small text-margin text-grey">
+                      Бизнес-центр &laquo;СИТИДЕЛ&raquo; 105064, Россия, Москва, улица Земляной Вал, дом&nbsp;9
+                    </p>
+                  </div>
+                  <div class="grid__col _lg_2 _sm_4">
+                    <p class="small text-bold text-margin text-grey">
+                      Телефон:
+                    </p>
+                    <p class="small text-margin text-grey">
+                      +7&nbsp;(495)&nbsp;721-36-97
+                    </p>
+                  </div>
+                  <div class="grid__col _lg_2 _sm_4">
+                    <p class="small text-bold text-margin text-grey">
+                      Факс:
+                    </p>
+                    <p class="small text-margin text-grey">
+                      + 7&nbsp;(495)&nbsp;723-72-82
+                    </p>
+                  </div>
+                  <div class="grid__col _lg_2 _sm_4">
+                    <p class="small text-bold text-margin text-grey">
+                      E-mail:
+                    </p>
+                    <p class="small text-margin text-grey">
+                      e-mail: info@akrikhin.ru
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid__col _lg_1 _sm_12 aa">
+              <p class="text-center text-white text-bold literature">ЛИТЕРАТУРА</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.3/tingle.min.js"
+    integrity="sha512-plGUER9JkeEWPPqQBE4sdLqBoQug5Ap+BCGMc7bJ8BXkm+VVj6QzkpBz5Yv2yPkkq+cqg9IpkBaGCas6uDbW8g=="
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
